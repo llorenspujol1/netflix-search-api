@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 export interface SearchListItem {
   title: string;
@@ -8,7 +8,8 @@ export interface SearchListItem {
 @Component({
   selector: 'search-list',
   styleUrls: [ './search-list.component.css' ],
-  templateUrl: './search-list.component.html'
+  templateUrl: './search-list.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchListComponent implements OnInit {
 

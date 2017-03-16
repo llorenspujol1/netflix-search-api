@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input, ChangeDetectionStrategy } from '@angular/core';
 
 export enum FavButtonState {
   Disabled,
@@ -9,7 +9,8 @@ export enum FavButtonState {
 @Component({
   selector: 'search-bar',
   styleUrls: [ './search-bar.component.css' ],
-  templateUrl: './search-bar.component.html'
+  templateUrl: './search-bar.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SearchBarComponent implements OnInit {
 
