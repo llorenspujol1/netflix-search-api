@@ -1,0 +1,9 @@
+:host {
+  margin: 30px;
+  display: block;
+}
+
+md-card.search-page {
+  background-color: white;
+}
+

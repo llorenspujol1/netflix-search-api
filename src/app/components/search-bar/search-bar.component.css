@@ -1,0 +1,25 @@
+md-input-container {
+  margin: 20px;
+}
+
+md-input-container input {
+  display: inline;
+  width: auto;
+}
+
+md-input-container md-icon {
+  display: inline;
+}
+
+md-icon.fav-selected {
+  color: gold;
+}
+md-icon:hover {
+  cursor: pointer;
+}
+md-icon.fav-disabled:hover {
+  cursor: auto;
+}
+
+
+

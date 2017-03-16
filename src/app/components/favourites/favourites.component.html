@@ -1,0 +1,6 @@
+<p>{{title}}</p>
+<md-chip-list>
+  <md-chip *ngFor="let favourite of favourites; let i = index;" [ngClass]="'fav-' + i">
+    {{favourite.name}} ({{favourite.nFavs}})
+  </md-chip>
+</md-chip-list>

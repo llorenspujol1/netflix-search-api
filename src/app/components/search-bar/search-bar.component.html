@@ -1,0 +1,9 @@
+<md-input-container dividerColor="primary">
+  <div>
+    <input mdInput placeholder="Search by actor/actress" value="" (input)="onInputChange($event.target.value)">
+    <md-icon *ngIf="favState === favButtonsState.Default"     (click)="favouriteClicked()">star_border</md-icon>
+    <md-icon *ngIf="favState === favButtonsState.Highlighted" class="fav-selected" (click)="favouriteClicked()">star</md-icon>
+    <md-icon *ngIf="favState === favButtonsState.Disabled"    class="fav-disabled" >star_border</md-icon>
+  </div>
+</md-input-container>
+

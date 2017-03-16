@@ -1,0 +1,18 @@
+html, body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e5e5e5;
+}
+
+a.active {
+  background-color: gray;
+}
+
+.mat-grid-tile .mat-figure {
+  justify-content: flex-start !important;
+}
+
+.md-chip-list-wrapper {
+  display: inline;
+}
+
+

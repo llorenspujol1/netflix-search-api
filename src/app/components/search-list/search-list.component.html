@@ -1,0 +1,9 @@
+<h3>Actors</h3>
+<md-card class="search-results">
+  <md-list>
+    <md-list-item *ngFor="let item of listItems; let i = index" (click)="itemClicked(i)">
+      <h4 md-line> {{item.title}}</h4>
+      <p md-line>  {{item.subtitle}} </p>
+    </md-list-item>
+  </md-list>
+</md-card>

@@ -1,0 +1,26 @@
+button {
+  margin: 5px;
+}
+
+p {
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+md-chip {
+  background-color: lightgray;
+  margin: 4px;
+}
+
+md-chip.fav-0 {
+  background-color: gold;
+}
+
+md-chip.fav-1 {
+  background-color: silver;
+}
+
+md-chip.fav-2 {
+  background-color: sandybrown;
+}

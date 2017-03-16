@@ -1,0 +1,16 @@
+<md-card class="search-page">
+  <md-grid-list cols="2" rowHeight="100px">
+    <md-grid-tile class="search-bar-container" [colspan]="1" [rowspan]="1">
+      <search-bar [favState]="favButtonState" (inputChange)="doSearch($event)" (favourite)="addFavourite($event)"></search-bar>
+    </md-grid-tile>
+    <md-grid-tile [colspan]="1" [rowspan]="1">
+      <favourites title="Your 3 most favourite searches:" [favourites]="top3Favourites"></favourites>
+    </md-grid-tile>
+    <md-grid-tile [colspan]="1" [rowspan]="5">
+      <search-list title="Search results / films, series, etc" [listItems]="searchResultsList" (itemIndex)="onListItemClicked($event)"></search-list>
+    </md-grid-tile>
+    <md-grid-tile [colspan]="1" [rowspan]="5">
+      <detail [data]="currentItem"></detail>
+    </md-grid-tile>
+  </md-grid-list>
+</md-card>

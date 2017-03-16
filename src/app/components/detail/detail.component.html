@@ -1,0 +1,18 @@
+<h3> Detail: </h3>
+<md-card *ngIf="data">
+  <img [src]="data.poster">
+  <md-card-content>
+    <h4>Title:</h4>
+    <p>{{data.show_title}}</p>
+    <h4>Category:</h4>
+    <p>{{data.category}}</p>
+    <h4>Director:</h4>
+    <p>{{data.director}}</p>
+    <h4>Rating:</h4>
+    <p>{{data.rating}}</p>
+    <h4>Release Year:</h4>
+    <p>{{data.release_year}}</p>
+  </md-card-content>
+
+</md-card>
+
